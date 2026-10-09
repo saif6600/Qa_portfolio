@@ -1,0 +1,5 @@
+export const bugs = [
+  { id: 'BUG-001', title: 'Login button remains disabled after entering valid credentials', severity: 'Major', priority: 'High', env: 'Chrome 153 / Windows 11', steps: ['Open login page', 'Enter valid email', 'Enter valid password', 'Observe Login button'], expected: 'Login button should become enabled.', actual: 'Login button remains disabled.', status: 'Open' },
+  { id: 'BUG-002', title: 'No results message missing for empty search', severity: 'Minor', priority: 'Medium', env: 'Firefox / Windows 11', steps: ['Open search', 'Search "zzzzzz"'], expected: '"No results" message is displayed.', actual: 'Blank page is displayed.', status: 'In Progress' },
+  { id: 'BUG-003', title: 'Order can be placed without a shipping address', severity: 'Critical', priority: 'High', env: 'Chrome / Android 14', steps: ['Add item to cart', 'Go to checkout', 'Leave address empty', 'Place order'], expected: 'Validation error blocks the order.', actual: 'Order is placed.', status: 'Fixed' },
+];
